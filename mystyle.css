@@ -53,11 +53,11 @@ h2 {
     color: rgb(104, 104, 244);
 }
 
-.link_no_underline {
+a {
     text-decoration: none;
 }
 
-.link_no_underline:hover {
+a:hover {
     text-decoration: underline;
 }
 
