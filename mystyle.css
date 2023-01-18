@@ -1,12 +1,14 @@
-body{
+body {
     margin-left: 20px;
     margin-right: 20px;
 }
-.div_header{
+
+.div_header {
     background-image: url("header.jpg");
     height: 200px;
 }
-.avatar_img{
+
+.avatar_img {
     border-radius: 35%;
     width: 200px;
     padding-left: 10px;
@@ -14,15 +16,18 @@ body{
     max-height: 200px;
     max-width: 200px;
 }
+
 .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
-.txt_orange{
-    color:#ffaa00;
+
+.txt_orange {
+    color: #ffaa00;
 }
-.txt_name{
+
+.txt_name {
     font-size: 3em;
     display: block;
     margin-block-start: 0.2em;
@@ -32,17 +37,58 @@ body{
     font-weight: bold;
     color: aqua;
 }
-.film_ol{
-    list-style-type: upper-alpha;
+
+.film_ol {
+    font-weight: bold;
 }
 
-.div_mood{
+.div_mood {
     display: inline-flex;
     vertical-align: bottom;
     width: 100%;
     align-items: flex-end;
 }
 
-h2{
+h2 {
     color: rgb(104, 104, 244);
 }
+
+.link_no_underline {
+    text-decoration: none;
+}
+
+.link_no_underline:hover {
+    text-decoration: underline;
+}
+
+.drop-cap {
+    margin: 0 auto;
+}
+
+.drop-cap::first-letter {
+    color: #A52A2A;
+    float: left;
+    font-size: 2em;
+    margin: 0 0.1em 0 0;
+    line-height: 0.9;
+}
+
+dl {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+dt {
+    color: rgb(206, 206, 78);
+    font-weight: bold;
+}
+
+dd {
+    color: rgb(22, 22, 2);
+    font-weight: normal;
+}
+
+ol {
+    display: flex;
+    flex-direction: column-reverse;
+  }
