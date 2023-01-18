@@ -1,0 +1,21 @@
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.div_header{
+    background-image: url("header.jpg");
+    height: 200px;
+}
+.avatar_img{
+    border-radius: 35%;
+    width: 200px;
+    padding-left: 10px;
+    vertical-align: middle;
+    max-height: 200px;
+    max-width: 200px;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
