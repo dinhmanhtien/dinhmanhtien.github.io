@@ -19,3 +19,25 @@ body{
     height: 100%;
     vertical-align: middle;
 }
+.txt_orange{
+    color:#ffaa00;
+}
+.txt_name{
+    font-size: 3em;
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.film_ol{
+    list-style-type: upper-alpha;
+}
+
+.div_mood{
+    display: inline-flex;
+    vertical-align: bottom;
+    width: 100%;
+    align-items: flex-end;
+}
