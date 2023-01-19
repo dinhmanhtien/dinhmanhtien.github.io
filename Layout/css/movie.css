@@ -122,10 +122,11 @@ body {
 }
 
 #validation-checker {
-    position: absolute;
+    position: fixed;
     right: 0px;
     bottom: 0px;
-
+    display: flex;
+    flex-direction: column;
 }
 .dl_right{
     padding-left: 10px;
