@@ -15,25 +15,25 @@
 #footer{
     grid-area: f;
     background-color: brown;
-    height: 120px;
+    height: 100px;
 }
 
 #content1{
     grid-area: c1;
     background-color: burlywood;
-    height: 400px;
+    height: 480px;
 }
 
 #content2{
     grid-area: c2;
     background-color: chartreuse;
-    height: 400px;
+    height: 480px;
 }
 
 #content3{
     grid-area: c3;
     background-color: darkslateblue;
-    height: 400px;
+    height: 480px;
 }
 
 
