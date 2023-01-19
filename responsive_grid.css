@@ -2,6 +2,11 @@
     grid-area: h;
     background-color: aqua;
     height: 120px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #menu{
@@ -16,24 +21,44 @@
     grid-area: f;
     background-color: brown;
     height: 100px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #content1{
     grid-area: c1;
     background-color: burlywood;
     height: 480px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #content2{
     grid-area: c2;
     background-color: chartreuse;
     height: 480px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #content3{
     grid-area: c3;
     background-color: darkslateblue;
     height: 480px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -72,5 +97,7 @@
     width: 80px;
     border: 1px;
     border-right-style: solid;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
