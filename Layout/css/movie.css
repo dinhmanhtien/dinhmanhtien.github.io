@@ -1,0 +1,132 @@
+h1 {
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+
+body {
+    background-image: url("../img/background.png");
+    /*background-position: center;*/
+
+}
+
+#header {
+    background-image: url("../img/bannerbg.png");
+    background-repeat: repeat-x;
+    position: static;
+}
+
+#header-banner {
+    position: relative;
+    left: 10px;
+}
+
+#main-content {
+    display: grid;
+    grid-template-areas:
+            "h h h h s"
+            "b b b b s"
+            "b b b b s"
+            "b b b b s"
+            "b b b b s"
+            "b b b b s"
+            "b b b b s"
+            "f f f f f";
+    border: 4px solid grey;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 8pt;
+    position: absolute;
+    width: 800px;
+    left: 26.5%;
+}
+
+#inside-header {
+    grid-area: h;
+    background-image: url("../img/rbg.png");
+    background-repeat: repeat-x;
+    background-size:83px;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    border-radius: 20px 0px 0px 0px
+}
+
+#inside-header div {
+    font-weight: bold;
+    font-size: 40pt;
+    color: red;
+    position: relative;
+}
+#inside-header div span{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+#inside-header-image {
+    position: relative;
+    border-radius: 20px 0px 0px 0px
+}
+
+#inside-content {
+    grid-area: b;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#right-inside-content {
+    flex: 50%;
+	padding-left: 3px;
+	padding-right: 6px;
+}
+
+#left-inside-content {
+    flex: 50%;
+	padding-left: 6px;
+	padding-right: 3px;
+}
+
+#inside-side {
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    background-color: #A2B964;
+    border-radius: 0px 20px 0px 0px;
+}
+
+#inside-side > img {
+    border-radius: 0px 20px 0px 0px;
+    width: 100%;
+}
+
+#inside-side>dl>dt {
+    font-weight: bold;
+    /*line-height: 20px;*/
+}
+
+#inside-footer {
+    grid-area: f;
+    background-color: #A2B964;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.comment {
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: #E8DC9B;
+    font-weight: bold;
+}
+
+.user {
+    text-align: left;
+}
+
+#validation-checker {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+.dl_right{
+    padding-left: 10px;
+}
