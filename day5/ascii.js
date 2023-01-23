@@ -38,7 +38,6 @@ function startAnimation() {
         default:
             fontSizeVal = 'large';
     }
-    console.log('fontSizeVal ' + fontSizeVal);
     document.getElementById("text-area").style.fontSize = fontSizeVal;
 
     var animations = ANIMATIONS[selectedAnimationOption].split(seperator);
