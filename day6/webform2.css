@@ -1,0 +1,115 @@
+#header {
+    grid-area: h;
+    background-color: rgb(64, 159, 247);
+    height: 70px;
+    /* font-weight: bold; */
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    /* justify-content: center; */
+}
+
+#menu {
+    grid-area: m;
+    /* background-color: rgb(115, 115, 255); */
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    font-size: x-large;
+
+}
+
+#title {
+    margin-left: 15px;
+}
+
+.menu_header {
+    font-size: x-large;
+    border-left: 2px solid white;
+    padding-left: 18px;
+    margin-left: 18px;
+}
+
+#content1 {
+    grid-area: c1;
+    /* background-color: burlywood;
+    height: 480px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#content2 {
+    grid-area: c2;
+    /* background-color: chartreuse;
+    height: 480px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.formside {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.inputstyle {
+    width: 100%;
+}
+
+#content1>input {
+    width: 100%;
+}
+
+#content2>input {
+    width: 100%;
+}
+
+#content2>select {
+    width: 100%;
+}
+
+.inputgroup{
+    margin-top: 15px;
+}
+
+#content3 {
+    grid-area: c3;
+    background-color: darkslateblue;
+    height: 480px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#container {
+    display: grid;
+    grid-template-areas:
+        'h h h h'
+        'h h h h'
+        'm m m m'
+        'c1 c1 c2 c2'
+        'c1 c1 c2 c2'
+        'c1 c1 c2 c2';
+}
+
+
+.cdiv_menu {
+    width: 80px;
+    border: 1px;
+    border-right-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
