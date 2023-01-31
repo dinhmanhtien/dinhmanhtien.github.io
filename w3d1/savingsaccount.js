@@ -1,7 +1,8 @@
 "use strict";
 
 class SavingsAccount extends Account{
-    constructor(interest){
+    constructor(number, interest){
+        super(number);
         this.interest = interest;
     }
 
@@ -12,16 +13,17 @@ class SavingsAccount extends Account{
     set interest(value){
         this._interest = value;
     }
+    
 
     adInterest(){
-        this._balance = (this._balance * this._interest)/100 + this._balance;
+        return this._balance = (this._balance * this._interest)/100 + this._balance;
     }
 
     /**
      * @returns {string} representation of this account
      */
     toString() {
-        return "Saving Account " + this._number + ": balance " + this._balance + ": interest " + this._interest;
+        return "Saving " + super.toString() + ": interest " + this._interest;
     }
 
 }
