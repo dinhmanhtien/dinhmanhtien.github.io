@@ -52,7 +52,7 @@ describe('Test Saving Account', () => {
     //Write it functions here
     let saving = new SavingsAccount(123456, 10);
     saving.deposit(1000);
-    it("Add deposit 10% for $1000", () => {
+    it("Add interest 10% for $1000", () => {
         assert.equal(saving.adInterest(), 1100);
     });
     it("Test toString", () => {
@@ -88,5 +88,59 @@ describe('Test Checking Account', () => {
         checking.withdraw(1100);
         assert.equal(checking.getBalance(), -100.0);
     });
+
+});
+
+describe('Test Bank', () => {
+    //Write it functions here
+    let bank = new Bank();
+
+    it("Starting nextNumber = 1", () => {
+        assert.equal(Bank.nextNumber, 1);
+    });
+
+    it("nextNumber = 2 after adding an account", () => {
+        bank.addAccount();
+        assert.equal(Bank.nextNumber, 2);
+    });
+
+    it("After adding an account, accounts array has 1 account", () => {
+        assert.equal(bank.getAccounts().length, 1);
+    });
+
+    it("nextNumber = 3 after adding a savings account", () => {
+        var acct = bank.addSavingsAccount(15);
+        acct.deposit(1000);
+        assert.equal(Bank.nextNumber, 3);
+    });
+
+    it("nextNumber = 4 after adding a checking account", () => {
+        var acct = bank.addCheckingAccount(200);
+        acct.withdraw(100);
+        assert.equal(Bank.nextNumber, 4);
+    });
+
+    it("Close account #2", () => {
+        // var acct = bank.addCheckingAccount(200);
+        // acct.withdraw(100);
+        bank.closeAccount(2);
+        assert.equal(bank.getAccounts().length, 2);
+    });
+
+    it("Test print account report on console log", () => {
+        var acct = bank.addSavingsAccount(15);
+        acct.deposit(1000);
+        bank.accountReport();
+        assert.equal(1, 1);
+        
+    });
+
+    it("End of month (see console log)", () => {
+        bank.endOfMonth();
+        assert.equal(1, 1);
+
+    });
+
+    
 
 });

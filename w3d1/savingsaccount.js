@@ -26,4 +26,11 @@ class SavingsAccount extends Account{
         return "Saving " + super.toString() + ": interest " + this._interest;
     }
 
+    endOfMonth() {
+        let calcInterest = this.adInterest();
+
+        let msg = "Interest added SavingsAccount "+this._number+ ": balance: "+calcInterest+" interest: "+ this._interest;
+        return msg; // does nothing
+    }
+
 }
