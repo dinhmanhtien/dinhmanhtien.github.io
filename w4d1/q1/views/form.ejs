@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="htf8">
+    <title>W4D1 Q1 Assignment</title>
+
+
+</head>
+
+<body>
+    <form action="/cookie" method="POST">
+        Key: <input type="text" name="key">
+        Value: <input type="text" name="value"><br>
+        <button type="submit" name="submit">Add Cookie</button>
+    </form>
+
+
+    <table>
+        <tr>
+            <th>key</th>
+            <th>value</th>
+        </tr>
+
+        <%Object.entries(cookies).forEach(([key, value])=> { %>
+            <tr>
+                <td>
+                    <%=key%>
+                </td>
+                <td>
+                    <%=value%>
+                </td>
+            </tr>
+            <%})%>
+
+    </table>
+
+</body>
+
+
+</html>

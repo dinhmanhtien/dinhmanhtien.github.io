@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="htf8">
+    <title>Quiz should form</title>
+
+</head>
+<body>
+    <ul>
+        <%Object.entries(sessions).forEach(([key, value])=> { if (key != 'cookie'){%>
+            <li>key: <%=key%>; value: <%=value%></li>
+
+            <%}})%>
+    </ul>
+    <a href="/add" name = "add">Add</a>
+
+</body>
+</html>
