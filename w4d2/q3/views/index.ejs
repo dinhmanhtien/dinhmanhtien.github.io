@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MY PRODUCTS</title>
+        <link href="/css/style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   
+        <script src="/js/contact.js"></script>
+    </head>
+    <body>
+        <div id="body">
+            <div id="inventory">
+                <a href="/cart">Go to cart</a>
+
+                <% for (index in products) {%>
+                    
+                        <div class="product" id="lis">
+                            <form id="add" method="post" action="/add">
+                                <a href="/p?pnumber=<%= index %>">Details</a>
+                                <h2><%= products[index].getName() %></h2>
+                               
+                                <img src="<%= products[index].getPic() %>" />
+                                <h2><p><%= products[index].getPrice() %></p></h2>
+                                <input type="hidden" value="<%= index %>" name="i">
+                                <button type="submit">Add To Cart</button>
+                            </form>
+
+                        </div>
+                
+                    
+                
+                <%}%>
+
+            </div>
+        </div>
+        <div>
+            Total:$ <%= sum %>
+        </div>
+        <div>
+            <p><%= cartNum %></p>
+            
+            <a href="/contact">Contact</a>
+        </div>
+
+    </body>
+</html>

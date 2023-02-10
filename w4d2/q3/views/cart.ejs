@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MY PRODUCTS</title>
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="inventory">
+            <% for (index in cart) {%>
+                
+                    <div class="product">
+                            <h1><%= cart[index].name %></h1>
+                            <h3><%= cart[index].nescription %> </h3>
+                            <img src="<%= cart[index].pic %>" />
+                            <h2><%= cart[index].price %></h2>
+                    </div>
+               
+                
+            
+            <%}%>
+
+        </div>
+        <div>
+            <p><%= cartNum %></p>
+        </div>
+
+    </body>
+</html>
